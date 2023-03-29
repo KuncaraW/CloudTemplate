@@ -73,7 +73,7 @@ resources:
       - MYSQL
     properties:
       flavor: ${input.size}
-      image: ${input.image}
+      image: ${to_lower(input.image)}
       count: '${input.clusterSize== "Small" ? 1 : (input.clusterSize == "Medium" ? 2 : 4)}'
       cloudConfig: |
         repo_update: true
@@ -162,7 +162,7 @@ resources:
     type: Cloud.Machine
     properties:
       flavor: ${input.size}
-      image: ${input.image}
+      image: ${to_lower(input.image)}
       cloudConfig: |
         repo_update: true
         repo_upgrade: all
