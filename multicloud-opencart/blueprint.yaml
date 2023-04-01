@@ -23,7 +23,7 @@ inputs:
     enum:
       - Ubuntu16.04
       - Ubuntu18.04
-    default: Ubuntu16.04
+    default: Ubuntu18.04
     title: Select Image/OS
   size:
     type: string
