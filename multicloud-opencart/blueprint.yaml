@@ -157,9 +157,6 @@ resources:
           - sed -i "s/dbiphere/$mysqlip/g" /var/www/opencart/admin/config.php
           - sed -i "s/usernamehere/$USER/g" /var/www/opencart/admin/config.php
           - sed -i "s/passwordhere/$PASS/g" /var/www/opencart/admin/config.php
-          - git clone https://github.com/mcclanc/oc-electro-theme.git
-          - cd oc-electro-theme
-          - mysql -u $USER -h $mysqlip opencart < cmd.txt      
           - systemctl reload apache2
           - systemctl restart apache2
           - sudo ufw allow 80
