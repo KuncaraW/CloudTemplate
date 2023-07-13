@@ -7,7 +7,6 @@ inputs:
     enum:
       - AWS
       - Azure
-      - GCP
     default: AWS
     title: Select Environment to deploy the web instances
     description: Target Environment for Web
@@ -16,7 +15,7 @@ inputs:
     enum:
       - AWS
       - Azure
-    default: Azure
+    default: AWS
     title: Select Environment to deploy the db instances
     description: Target Environment for DB
   image:
